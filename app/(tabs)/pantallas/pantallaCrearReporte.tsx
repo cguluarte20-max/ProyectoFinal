@@ -3,7 +3,6 @@ import * as Location from 'expo-location';
 import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { Alert, Image, Keyboard, KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from 'react-native';
-import { ScrollView } from 'react-native-reanimated/lib/typescript/Animated';
 import { useReportes } from './ReporteContext';
 
 export default function PantallaCrearReporte() {
@@ -75,7 +74,6 @@ export default function PantallaCrearReporte() {
   return (
   <KeyboardAvoidingView style={{ flex: 1 }}>
     <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-      <ScrollView style={style.scroll}>
       <View style={style.container}>
 
         <View style={style.header}>
@@ -127,7 +125,6 @@ export default function PantallaCrearReporte() {
         </TouchableOpacity>
       
       </View>
-      </ScrollView>
     </TouchableWithoutFeedback>
   </KeyboardAvoidingView>
 );

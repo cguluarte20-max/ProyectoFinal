@@ -1,18 +1,24 @@
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { router } from 'expo-router';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { RootStackParamList } from './navegacion';
 
-export default function PantallaBienvenida(){
+type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
+
+export default function PantallaBienvenida({navigation}: Props){
+
     return(
+    
         <View style={style.container}>
              <View style={style.encabezado}><Text style={style.TituloEncabezado}>Reporte ciudadano</Text></View>
-
             <Text style = {style.titulo}>Tu voz como nuestro compromiso</Text>
             <Text>Reporte los problemas y mejore su comunidad </Text>
-            <TouchableOpacity style ={style.BotonIniciarSesion}>
+            <TouchableOpacity style ={style.BotonIniciarSesion} onPress={() => router.push('/(tabs)/pantallas/pantallaInicioDeSesion')}>
                 <Text>Iniciar sesión</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style = {style.BotonRegistrarce}>
+            <TouchableOpacity style = {style.BotonRegistrarce} onPress={() => router.push('/(tabs)/pantallas/pantallaRegistro')}>
                 <Text>Registrase</Text>
                 </TouchableOpacity>
             

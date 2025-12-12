@@ -26,7 +26,7 @@ export default function ReporteContext({ children }: { children: React.ReactNode
       coordenadas: { lat: 20.659699, lng: -103.349609 },
       descripcion: "Hay un monton de basura acumulada por la calle",
       usuario: "Sofía Ramírez",
-      imagen: "https://zetatijuana.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-01-at-11.32.33-AM.jpeg",
+      imagen: "Basura.png",
       fecha: "2025-12-07"
     },
 
@@ -36,7 +36,7 @@ export default function ReporteContext({ children }: { children: React.ReactNode
       descripcion: "Hay muchos charcos de agua sucia por las calles",
       ubicacion: "Miguel de Legaspy",
       usuario: "Enrique Segoviano",
-      imagen: "https://img.gruporeforma.com/imagenes/960x640/5/987/4986227.jpg",
+      imagen: "AguaSucia.jpg",
       fecha: "2025-12-06",
     },
 ])
